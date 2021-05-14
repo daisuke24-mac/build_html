@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+	<head>
+		<meta charset="utf-8">
+		<!--おまじない-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>HTML,CSS学習記録</title>
+		<!-- Bootstrap導入-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<style>
+			body		{
+				color : black;
+				background-color : lightgray;
+				background-image : url(icon-4102192__340.webp);
+			}
+			p	{
+				padding : 40px;
+			}
+			<!--作ったけど使っていないクラス設定-->
+			.bocchan	{
+				padding : 30px;
+				color : #f0b000;
+				backgrond-color: gray;
+			}
+			.end	{
+				color : orange;
+				backgrond-color : white;
+			}
+			</style>
+	</head>
+	<body>
+		<!--ナビケーションの設定-->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Daisy' Sample</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#days">日程</a></li>
+						<li><a href="#boy">坊ちゃん</a></li>
+						<li><a href="#cat">吾輩は猫である</a></li>
+						<li><a href="#comment">意見など</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">	
+			<h2 id="days">日程</h2>
+			<ul class="list-group">
+				<li class="list-group-item"><a href="#20210407" >20210407「初挑戦」</a></li>
+				<li class="list-group-item"><a href="#20210409">20210409「成長」</a></li>
+				<li class="list-group-item"><a href="#20210410">20210410「Try&Error」</a></li>
+				<li class="list-group-item"><a href="#20210412">20210412「遊び」</a></li>
+				<li class="list-group-item"><a href="#20210422">20210422 「久しぶり」 </a></li>
+			</ul>
+			<script language="JavaScript">
+				mydate=new Date();
+				Ye=mydate.getFullYear()+"年";
+				Mo=mydate.getMonth()+1+"月";
+				Da=mydate.getDate()+"日";
+				Day=mydate.getDay();
+				Day2=new Array(7);
+				Day2[0]="日";Day2[1]="月";Day2[2]="火";
+				Day2[3]="水";Day2[4]="木";Day2[5]="金";
+				Day2[6]="土";
+				document.write("<span style='color:#yellow;'>");
+				document.write("今日は"+Ye+Mo+Da+"（"+Day2[Day]+"）");
+				document.write("です</span>");
+			</script>
+			<img src="https://cdn.pixabay.com/photo/2021/04/01/20/49/trees-6143244__340.jpg">
+			<h2 id="20210407">20210407</h2>
+			<p>とにかくやってることが大事<br>なんとなくやってみよう</p>
+			<a href="https://paiza.jp/works/html/primer/beginner-html1" target="_blank">今回の学習範囲</a>
+			<h2 id="20210409">20210409</h2>
+			<p>背景や文字の色を変えれるようになった。<br>あと行や列をいじれるようになった。</p>
+			<a href="https://paiza.jp/works/html/primer/beginner-html2" target="_blank">今回の学習範囲</a>
+			<h2 id="20210410">20210410</h2>
+			<a href="https://paiza.jp/works/html/primer/beginner-html3" target="_blank">今回の学習範囲</a>
+			<h2 id="20210412">20210412</h2>
+			<p>今まで習ったことを使いながら色々と機能を追加した。</p>
+			<h2 id="20210422">20210422</h2>
+			<p>プログラミングチャンネルを見て、先にhtmlで文字を整えてそれからcssを導入していくこと方が良さそう</p>
+			<!--行を設定するクラス設定-->
+			<div class="low">
+				<!--列を設定するクラス設定-->
+				<!--列のサイズは12なのでそれに合うように設定する-->
+				<div class="col-sm-12">
+					<h2 id="boy">坊ちゃん</h2>
+					<a href="https://www.aozora.gr.jp/cards/000148/files/752_14964.html" target="_blank" rel="noopener noreferrer">青空文庫</a>
+				</div>
+				<div class="col-sm-6">
+					<p>親譲おやゆずりの無鉄砲(むてっぽう)で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰こしを抜ぬかした事がある。なぜそんな無闇むやみをしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談じょうだんに、いくら威張いばっても、そこから飛び降りる事は出来まい。弱虫やーい。と囃はやしたからである。小使こづかいに負ぶさって帰って来た時、おやじが大きな眼めをして二階ぐらいから飛び降りて腰を抜かす奴やつがあるかと云いったから、この次は抜かさずに飛んで見せますと答えた。</p>
+				</div>
+　				<div class="col-sm-6">
+					<p>親類のものから西洋製のナイフを貰もらって奇麗きれいな刃はを日に翳かざして、友達ともだちに見せていたら、一人が光る事は光るが切れそうもないと云った。切れぬ事があるか、何でも切ってみせると受け合った。そんなら君の指を切ってみろと注文したから、何だ指ぐらいこの通りだと右の手の親指の甲こうをはすに切り込こんだ。幸さいわいナイフが小さいのと、親指の骨が堅かたかったので、今だに親指は手に付いている。<strong>しかし創痕きずあとは死ぬまで消えぬ。</strong>
+					</p>
+				</div>
+				<div class="col-sm-12">
+					<h2 id="cat">吾輩は猫である</h2>
+					<a href="https://www.aozora.gr.jp/cards/000148/files/789_14547.html" target="_blank" rel="noopener noreferrer">青空文庫</a>
+				</div>
+				<div class="col-sm-6">
+					<p>吾輩は猫である。名前はまだ無い。
+　どこで生まれたか頓と見當がつかぬ。何ても暗薄いじめじめした所でニャー／＼泣いて居た事丈は記憶して居る。吾輩はこゝで始めて人間といふものを見た。然もあとで聞くとそれは書生といふ人間で一番獰惡な種族であつたさうだ。此書生といふのは時々我々を捕へて煮て食ふといふ話である。然し其當時は何といふ考もなかつたから別段恐しいとも思はなかつた。但彼の掌に載せられてスーと持ち上げられた時何だかフハフハした感じが有つた許りである。掌の上で少し落ち付いて書生の顏を見たが所謂人間といふものゝ見始であらう。此の時妙なものだと思つた感じが今でも殘つて居る。第一毛を以て裝飾されべき筈の顏がつる／＼して丸で藥罐だ。其後猫にも大分逢つたがこんな片輪には一度も出會はした事がない。加之顏の眞中が餘りに突起して居る。そうして其穴の中から時々ぷう／＼と烟を吹く。どうも咽せぽくて實に弱つた。是が人間の飮む烟草といふものである事は漸く此頃知つた。</p>
+				</div>
+				<div class="col-sm-6">
+					<p>此書生の掌の裏でしばらくはよい心持に坐つて居つたが、暫くすると非常な速力で運轉し始めた。書生が動くのか自分丈が動くのか分らないが無暗に眼が廻る。胸が惡くなる。到底助からないと思つて居ると、どさりと音がして眼から火が出た。夫迄は記憶して居るがあとは何の事やらいくら考へ出さうとしても分らない。
+　ふと氣が付いて見ると書生は居ない。澤山居つた兄弟が一疋も見えぬ。肝心の母親さへ姿を隱して仕舞つた。其上今迄の所とは違つて無暗に明るい。眼を明いて居られぬ位だ。果てな何でも容子が可笑いと、のそ／＼這ひ出して見ると非常に痛い。吾輩は藁の上から急に笹原の中へ棄てられたのである。</p>
+				</div>
+				<div class="col-sm-12">
+					<p>漸くの思ひで笹原を這ひ出すと向ふに大きな池がある。吾輩は池の前に坐つてどうしたらよからうと考へて見た。別に是といふ分別も出ない。暫くして泣いたら書生が又迎に來てくれるかと考へ付いた。ニャー、ニャーと試みにやつて見たが誰も來ない。其内池の上をさら／＼と風が渡つて日が暮れかゝる。腹が非常に減つて來た。泣き度ても聲が出ない。仕方がない、何でもよいから食物のある所迄あるかうと决心をしてそろりそろりと池を左りに廻り始めた。どうも非常に苦しい。そこを我慢して無理やりに這つて行くと漸くの事で何となく人間臭ひ所へ出た。此所へ這入つたら、どうにかなると思つて竹垣の崩れた穴から、とある邸内にもぐり込んだ。縁は不思議なもので、もし此竹垣が破れて居なかつたなら、吾輩は遂に路傍に餓死したかも知れんのである。一樹の蔭とはよく云つたものだ。此垣根の穴は今日に至る迄吾輩が隣家の三毛を訪問する時の通路になつて居る。偖邸へは忍び込んだものの是から先どうして善いか分らない。其内に暗くなる、腹は減る、寒さは寒し、雨が降て來るといふ始末でもう一刻も猶豫が出來なくなつた。仕方がないから兎に角明るくて暖かさうな方へ方へとあるいて行く。今から考へると其時は既に家の内に這入つてたのだ。こゝで余は彼の書生以外の人間を再び見るべき機會に遭遇したのである。第一に逢つたのがおさんである。是は前の書生より一層亂暴な方で我輩を見るや否やいきなり頸筋をつかんで表へ抛り出した。いや是は駄目だと思つたから眼をねぶつて運を天に任せて居た。然しひもじいのと寒いのにはどうしても我慢が出來ん。吾輩は再びおさんの隙を見て臺所へ這ひ上つた。すると間もなく又投げ出された。吾輩は投げ出されては這ひ上り、這ひ上つては投げ出され何でも同じ事を四五遍繰り返したのを記憶して居る。其時におさんと云ふ者はつく／″＼いやになつた。此間おさんの三馬を偸んで此返報をしてやつてから、やつと胸の痞が下りた。吾輩が最後につまみ出され樣としたときに、此家の主人が騷々しい何だといひながら出て來た。下女は吾輩をぶら下げて主人の方へ向けて此宿なしの小猫がいくら出しても出しても御臺所へ上つて來て困りますといふ。主人は鼻の下の黒い毛を撚りながら吾輩の顏を暫らく眺めて居つたが。やがてそんなら内へ置いてやれといつたまゝ奧へ這入つて仕舞つた。主人は餘り口を聞かぬ人と見えた。下女は口惜しさうに吾輩を臺所へ抛り出した。かくして吾輩は遂に此家を自分の住家と極める事にしたのである。</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<a href="https://code-kitchen.dev/html/button/" target="_blank">ボタンについて</a>
+			<a class="end"><p><いいと思ったらgoodボタンをお願いします</p></a><!--クラスの設定がうまくいかない-->
+			<button type="button" onclick="alert('thank you!')">good</button>
+			<form action="/Users/taniguchidaisuke/Desktop/build/sample.html">
+				<p>意見などはこちらのフォームから</p>
+				<div>
+					<label for="email">e-mail</label>
+					<input type="text" name="email" id="email" oinput="checkEmail()">
+				</div>
+				<div>
+					<label for="comment">意見	</label>
+					<input type="text" name="comment" id="comment">
+				</div>
+				<button type="reset">リセット</button>
+				<button type="submit">送信</button>
+			</form>
+
+			<!--おまじない-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		</div>
+	</body>
+</html>
